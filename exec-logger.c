@@ -41,7 +41,7 @@ int execve(const char *progname, char *const argv[], char *const envp[]) {
 
   sprintf(buf, "[UID:%d PARENT_PID:%d] CMD:", uid, ppid);
   commandlen = strlen(buf);
-  
+
   for (i = 0; argv[i] != NULL; i++) {
     len = strlen(argv[i]);
 
